@@ -12,7 +12,7 @@ export default function Card({ id, name, origin, idImg }) {
   // }
 
   return (
-    <CardMUI sx={{ maxWidth: 345 }} onClick={() => navegazion(`detail/${id}`)} >
+    <CardMUI sx={{ maxWidth: 345 }} onClick={() => navegazion(`detail/${id}`)} /* 2. El valor que llegue a, en este caso id, va a ser el valor de la propiedad que se guarde en useParams. Sigue en Detail */ >
       <CardMedia
         sx={{ height: 140 }}
         image={`https://cdn2.thedogapi.com/images/${idImg}.jpg`}
